@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Add Train</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Master Add Train</h2>
+    <div class="header">
+        <li><a href="masterAddTrain.html">Schedule Train</a></li>
+        <li><a href="masterViewPassenger.jsp">View Passengers</a></li>
+        <li><a href="masterHomePage.jsp">Home Page</a></li>
+    </div>
+    <div class="details">
+        <div class="details_header">
+            Add Train Details
+        </div>
+        <form action="addTrain.jsp" method="get">
+            <div class="details_para">
+                <div class="para">
+                    <div class="innerPara left">From</div>
+                    <div class="innerPara right">
+                        <select name="departure">
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Ahmdebad">Ahmdebad</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Ajmer">Ajmer</option>
+                            <option value="Gorakhpur">Gorakhpur</option>
+                            <option value="Banaras">Banaras</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Jabalpur">Jabalpur</option>
+                            <option value="Raigadh">Raigadh</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">To</div>
+                    <div class="innerPara right">
+                        <select name="arrival">
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Ahmdebad">Ahmdebad</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Ajmer">Ajmer</option>
+                            <option value="Gorakhpur">Gorakhpur</option>
+                            <option value="Banaras">Banaras</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Jabalpur">Jabalpur</option>
+                            <option value="Raigadh">Raigadh</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Date Of Departure</div>
+                    <div class="innerPara right"><input type="date" name="dateOfDeparture"></div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Date Of Arrival</div>
+                    <div class="innerPara right"><input type="date" name="dateOfArrival"></div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Time Of Departure</div>
+                    <div class="innerPara right"><input type="time" name="timeOfDeparture"></div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Time Of Arrival</div>
+                    <div class="innerPara right"><input type="time" name="timeOfArrival"></div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Total No. Of Seats Available</div>
+                    <div class="innerPara right"><input type="number" name="no_of_seats" placeholder="No. Of Seats"></div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Type</div>
+                    <div class="innerPara right">
+                        <select name="type">
+                            <option value="Reservation">Reservation</option>
+                            <option value="Slow">Slow</option>
+                            <option value="Superfast">Superfast</option>
+                            <option value="Local">Local</option>                           
+                        </select>
+                    </div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Price</div>
+                    <div class="innerPara right"><input type="number" name="price" placeholder="Price of the ticket"></div>
+                </div>
+                <button type="submit">Add Train</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Book Ticket</h2>
+    <div class="header">
+        <li><a href="passengerBookTicket.html">Book Ticket</a></li>
+        <li><a href="passengerViewTicket.jsp">Booked Tickets</a></li>
+        <li><a href="passengerCancelTicket.html">Cancel Ticket</a></li>
+        <li><a href="passengerHomePage.jsp">Home Page</a></li>
+    </div>
+    <div class="details">
+        <div class="details_header">
+            Fill The Form
+        </div>
+        <form action="listOfTrain.jsp" method="post">
+            <div class="details_para">
+                <div class="para">
+                    <div class="innerPara left">From</div>
+                    <div class="innerPara right">
+                        <select name="departure">
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Ahmdebad">Ahmdebad</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Ajmer">Ajmer</option>
+                            <option value="Gorakhpur">Gorakhpur</option>
+                            <option value="Banaras">Banaras</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Jabalpur">Jabalpur</option>
+                            <option value="Raigadh">Raigadh</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">To</div>
+                    <div class="innerPara right">
+                        <select name="arrival">
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Ahmdebad">Ahmdebad</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Ajmer">Ajmer</option>
+                            <option value="Gorakhpur">Gorakhpur</option>
+                            <option value="Banaras">Banaras</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Jabalpur">Jabalpur</option>
+                            <option value="Raigadh">Raigadh</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Date Of Departure</div>
+                    <div class="innerPara right"><input type="date" name="dateOfDeparture"></div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">No. Of Seats for booking</div>
+                    <div class="innerPara right"><input type="number" name="no_of_seats" placeholder="No. Of Seats"></div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Type</div>
+                    <div class="innerPara right">
+                        <select name="type">
+                            <option value="Reservation">Reservation</option>
+                            <option value="Slow">Slow</option>
+                            <option value="Superfast">Superfast</option>
+                            <option value="Local">Local</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="para">
+                    <div class="innerPara left">Food</div>
+                    <div class="innerPara right">
+                        <select name="food">
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <input type="hidden" name="uid" value="">
+                <button type="submit">List of Trains</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

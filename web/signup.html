@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form action="signup.jsp" method="post" class="login_form">
+            <h1 class="details_header">Sign Up Page</h1>
+            <table>
+                <tr>
+                    <td class="innerPara left">Name:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td class="innerPara left">Date Of Birth:</td>
+                    <td><input type="date" name="dob" style="padding-right: 20%;"></td>
+                </tr>
+                <tr>
+                    <td class="innerPara left">Phone Number:</td>
+                    <td><input type="number" name="phnumber"></td>
+                </tr>
+                <tr>
+                    <td class="innerPara left">Gender:</td>
+                        <td>
+                            <select name="gender" style="padding-right: 60%;">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </td>
+                </tr>
+                <tr>
+                    <td class="innerPara left">Aadhar Card Number:</td>
+                    <td><input type="text" name="adhaar"></td>
+                </tr>
+                <tr>
+                    <td class="innerPara left">Email Id:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td class="innerPara left">Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+            </table>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Cancel Ticket</h2>
+    <div class="header">
+        <li><a href="passengerBookTicket.html">Book Ticket</a></li>
+        <li><a href="passengerViewTicket.jsp">Booked Tickets</a></li>
+        <li><a href="passengerCancelTicket.html">Cancel Ticket</a></li>
+        <li><a href="passengerHomePage.jsp">Home Page</a></li>
+    </div>
+    <div class="details">
+        <div class="details_header">
+            Fill Form
+        </div>
+        <form action="cancelTicket.jsp" method="post">
+            <div class="details_para">
+                <div class="para">
+                    <div class="innerPara left">Enter PNR: </div>
+                    <div class="innerPara right"><input type="number" name="pnr"></div>
+                </div>
+                <button type="submit">Cancel Ticket</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
